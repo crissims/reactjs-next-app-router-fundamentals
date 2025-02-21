@@ -7,6 +7,8 @@ interface ProductProps {
 
 export default function Product({params}: ProductProps) {
   
+  
+
   const [productId, size, color] = params.data
 
   function addToCart() {
