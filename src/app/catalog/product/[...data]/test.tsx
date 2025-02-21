@@ -1,4 +1,6 @@
 
-export function Test() {
-    return <h1 onClick={() => {}}>Test</h1>
+export async function Test() {
+    await new Promise((resolve) => setTimeout(resolve,1000))
+
+    return <h1>Test</h1>
 }

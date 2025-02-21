@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react"
-import { Test } from "./test"
 
-export function AddToCartButton() {
+
+export function AddToCartButton({children}: {children: React.ReactNode}) {
 
     const [count, setCount] = useState(0)
 
@@ -14,7 +14,7 @@ export function AddToCartButton() {
         <div>
         
         <button onClick={addToCart}>Adcionar ao carrinho ({count})</button>
-        <Test />
+        {children}
 
         </div>
 
