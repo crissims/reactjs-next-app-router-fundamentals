@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react"
+import { Test } from "./test"
 
 export function AddToCartButton() {
 
@@ -9,5 +10,13 @@ export function AddToCartButton() {
         setCount((state) => state + 1)
     }
 
-    return <button onClick={addToCart}>Adcionar ao carrinho ({count})</button>
+    return (
+        <div>
+        
+        <button onClick={addToCart}>Adcionar ao carrinho ({count})</button>
+        <Test />
+
+        </div>
+
+    )
 }
